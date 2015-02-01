@@ -226,6 +226,11 @@ pre {
     background: none;
 }
 
+.footer a {
+    color: #999;
+    font-weight: 600;
+}
+
 .pagination-wrapper {
     padding-top: 6px;
 }
