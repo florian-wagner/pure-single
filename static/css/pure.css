@@ -334,3 +334,11 @@ background: rgb(217, 237, 247);
 input.antispam {
 visibility: hidden
 }
+
+div#journal-articles {
+font-size: 80%
+}
+
+div#conference-contributions {
+font-size: 80%
+}
