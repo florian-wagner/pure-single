@@ -26,20 +26,21 @@
     <link href="{{ FAVICON_URL }}" rel="icon">
     {% endif %}
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/academicons.min.css">
     <!--<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/javascript/styles/style.css">-->
     <!--<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/javascript/styles/timesheet.css">-->
     <!--<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/javascript/styles/timesheet-white.css">-->
     {% block head_css %}{% endblock %}
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!--<script src="{{ SITEURL }}/javascript/script/timesheet.min.js" type="text/javascript"></script>-->
     <!--<script type="text/javascript" src="{{ SITEURL }}/javascript/script/lib.js"></script>-->
     <!--<script type="text/javascript" src="{{ SITEURL }}/javascript/script/main.js"></script>-->
     {% block head_js %}
-    
+
     {% endblock %}
 </head>
 
@@ -61,7 +62,7 @@
                                 <p class="social">
                             {% for title, link in SOCIAL %}
                                     <a href="{{ link }}", target="_blank">
-                                        <i class="fa fa-{{ title }} fa-2x"></i>
+                                        <i class="{{ title }}"></i>
                                     </a>
                             {% endfor %}
                                 </p>
