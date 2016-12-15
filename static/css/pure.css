@@ -282,7 +282,7 @@ pre {
         width: 100%;
         position: relative;
         margin: 0;
-        height: 450px;
+        height: 500px;
     }
     .content {
         padding: 1em 1.5em 0;
@@ -341,4 +341,10 @@ font-size: 80%
 
 div#conference-contributions {
 font-size: 80%
+}
+
+img {
+  width: inherit;  /* This makes the next two lines work in IE8. */
+  max-width: 100%; /* Add !important if needed. */
+  height: auto;    /* Add !important if needed. */
 }
